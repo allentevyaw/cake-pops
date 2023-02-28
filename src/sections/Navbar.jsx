@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import styles from '../styles'
 import {CiLollipop} from 'react-icons/ci'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {motion} from 'framer-motion'
+import { navVariants } from '../../utils/motion'
 
 
 
@@ -22,7 +22,12 @@ useEffect(() => {
 
     
   return (
-    <nav className='w-full h-[80px] shadow-md text-[24px] font-extrabold text-white br-gradient bg-[#F40076]'>
+    <motion.nav 
+        className='w-full h-[70px] shadow-md text-[16px] font-extrabold
+         text-white br-gradient bg-[#F40076]'
+            variants={navVariants}
+            initial='hidden'
+            whileInView='show'>
 
         <div className='mx-auto flex justify-between gap-8 p-5'>
             <div>
@@ -33,12 +38,13 @@ useEffect(() => {
             </h2>
 
             <motion.div
-            initial={{ scale: 2 }}
+            initial={{ scale: 1 }}
             whileInView={{ rotate: 360, scale: 1 }}
             transition={{
                 type: "spring",
                 stiffness: 180,
-                damping: 35
+                damping: 35,
+                delay: 2
             }}>
                 <CiLollipop className='text-[30px]'/>
             </motion.div>
@@ -46,7 +52,7 @@ useEffect(() => {
             <BiMenuAltRight />
         </div>
 
-    </nav>
+    </motion.nav>
   )
 }
 
