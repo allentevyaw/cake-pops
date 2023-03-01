@@ -34,7 +34,7 @@ useEffect(() => {
             </div>
             <div className='flex leading-[30px] text-white'>
             <h2 className=''>
-                ANDREA'S CAKE POPS
+                CAKE POPS BY ANDREA
             </h2>
 
             <motion.div

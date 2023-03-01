@@ -17,7 +17,7 @@ const styles = {
     heroHeading:
         'font-bold lg:text-[80px] md:text-[70px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase',
     subHeroHeading:
-        'font-bold lg:text-[60px] md:text-[50px] sm:text-[40px] text-[24px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase',
+        'font-bold lg:text-[60px] md:text-[50px] sm:text-[40px] text-[24px] lg:leading-[100px] md:leading-[80px] sm:leading-[60px] leading-[40px] uppercase',
     heroDText:
         'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
   };

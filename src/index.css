@@ -7,8 +7,10 @@
 @layer base {
   body {
       @apply font-[Roboto];
-      @apply bg-[#F40076];
-      @apply bg-gradient-to-b from-[#F40076] to-[#DF98FA]
+      /* @apply bg-[#F40076]; */
+      /* @apply bg-gradient-to-b from-[#F40076] to-[#DF98FA] */
+      @apply bg-gradient-to-b from-white to-[#F40076]
+
   }
   li {
       @apply px-4;
