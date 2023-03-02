@@ -9,7 +9,7 @@ import {CiLollipop} from 'react-icons/ci'
 
 const Hero = () => {
   return (
-    <section className='bg-gradient-to-b from-white to-[#F40076]'>
+    <section className='bg-gradient-to-b from-white to-[#F40076] pb-20'>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -57,15 +57,13 @@ const Hero = () => {
       rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200'>
        <span className='flex items-center'>
         <h1>LET'S POP </h1>
-        <CiLollipop className='hover:rotate-180 duration-200 text-[22px]'/>
+        <CiLollipop className='hover:rotate-180 duration-300 text-[22px]'/>
         </span> 
       </button>
       </div>
 
 
         </motion.div>
-
-
       </motion.div>
     </section>
   )

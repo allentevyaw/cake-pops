@@ -4,31 +4,52 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {BsPinterest} from 'react-icons/bs'
 import {SiEtsy} from 'react-icons/si'
 import {motion} from 'framer-motion'
+import { staggerContainer, fadeIn } from '../../utils/motion';
+import styles from '../styles';
 
 
 
 
 const Social = () => {
 
-const array = [
-<AiOutlineInstagram className='hover:text-purple-300'/>,
-<HiOutlineMail className='hover:text-purple-300'/>,
-<BsPinterest className='hover:text-purple-300'/>,
-<SiEtsy className='hover:text-purple-300'/>
-]
-
-
   return (
-    <section className=' bg-[#F40076]'>
-     <motion.div 
-     className='flex justify-between py-6 items-center 
-     mx-24 text-[24px] text-white'
-     
-
->
+    <section className={`${styles.paddings} relative z-10 bg-[#F40076]`}>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto lg:px-24 gap-8`}
+    >
+<div className='flex justify-between px-12 text-[36px]'>
+<motion.div
+        variants={fadeIn('left', 'tween', 0.2, 1)}
+        className="hover:text-white"
+      >
+        <AiOutlineInstagram />
+</motion.div>
+<motion.div
+        variants={fadeIn('left', 'tween', 0.3, 1.5)}
+        className="hover:text-white"
+      >
+        <HiOutlineMail />
+</motion.div>
+<motion.div
+        variants={fadeIn('left', 'tween', .4, 2)}
+        className="hover:text-white"
+      >
+        <BsPinterest />
+</motion.div>
+<motion.div
+        variants={fadeIn('left', 'tween', .6, 3)}
+        className="hover:text-white"
+      >
+        <SiEtsy />
+</motion.div>
+</div>
 
     </motion.div>
-    </section>
+  </section>
   )
 }
 
