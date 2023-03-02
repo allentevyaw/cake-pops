@@ -9,6 +9,15 @@ import {motion} from 'framer-motion'
 
 
 const Social = () => {
+
+const array = [
+<AiOutlineInstagram className='hover:text-purple-300'/>,
+<HiOutlineMail className='hover:text-purple-300'/>,
+<BsPinterest className='hover:text-purple-300'/>,
+<SiEtsy className='hover:text-purple-300'/>
+]
+
+
   return (
     <section className=' bg-[#F40076]'>
      <motion.div 
@@ -17,10 +26,7 @@ const Social = () => {
      
 
 >
-        <AiOutlineInstagram className='hover:text-purple-300'/>
-        <HiOutlineMail className='hover:text-purple-300'/>
-        <BsPinterest className='hover:text-purple-300'/>
-        <SiEtsy className='hover:text-purple-300'/>
+
     </motion.div>
     </section>
   )
