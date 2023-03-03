@@ -21,28 +21,28 @@ const Social = () => {
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto lg:px-24 gap-8`}
     >
-<div className='flex justify-between px-12 text-[36px]'>
+<div className='flex justify-between px-12 text-[36px] text-white'>
 <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
-        className="hover:text-white"
+        className="hover:text-[#DF98FA] cursor-pointer"
       >
         <AiOutlineInstagram />
 </motion.div>
 <motion.div
         variants={fadeIn('left', 'tween', 0.3, 1.5)}
-        className="hover:text-white"
+        className="hover:text-[#DF98FA] cursor-pointer"
       >
         <HiOutlineMail />
 </motion.div>
 <motion.div
         variants={fadeIn('left', 'tween', .4, 2)}
-        className="hover:text-white"
+        className="hover:text-[#DF98FA] cursor-pointer"
       >
         <BsPinterest />
 </motion.div>
 <motion.div
         variants={fadeIn('left', 'tween', .6, 3)}
-        className="hover:text-white"
+        className="hover:text-[#DF98FA] cursor-pointer"
       >
         <SiEtsy />
 </motion.div>

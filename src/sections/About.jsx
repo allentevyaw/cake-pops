@@ -14,7 +14,7 @@ const About = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`mx-auto flex lg:flex-row flex-col gap-8`}
+      className={` max-w-[1000px] w-full grid sm:grid-cols-2 gap-8`}
     >
       <motion.div
         variants={rollIn('left')}
@@ -23,15 +23,21 @@ const About = () => {
         <img
           src={cake}
           alt="cake"
-          className="w-[50%] h-[50%] lg:w-[90%] object-contain rounded-lg hover:scale-110 duration-300"
+          className=" 
+          object-contain rounded-lg hover:scale-110 duration-300 shadow-lg"
         />
       </motion.div>
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <h1>WELCOME!</h1>
-        <p>To my cake pop shop!</p>
+        <h1 className='text-[36px] font-bold text-white'>WELCOME!</h1>
+        <p>My name is Andrea, and I started Cake Pop's by Andrea
+             because I have a passion for making delicious cake pop,
+            and I wanted to find a way to raise money for a cause that is near and dear
+            to my heart, domestic violance. 10% of all proceeds go to 
+            XXXX organization. 
+        </p>
 
 
       </motion.div>

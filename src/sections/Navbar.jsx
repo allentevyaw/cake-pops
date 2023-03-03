@@ -3,6 +3,8 @@ import {CiLollipop} from 'react-icons/ci'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {motion} from 'framer-motion'
 import { navVariants } from '../../utils/motion'
+import bubble from '../assets/bubble.png'
+
 
 
 
@@ -27,13 +29,12 @@ useEffect(() => {
          text-white br-gradient bg-[#F40076]'
             variants={navVariants}
             initial='hidden'
-            whileInView='show'>
+            whileInView='show'>           
 
-        <div className='mx-auto flex justify-between gap-8 p-5'>
-            <div>
-            </div>
+        <div className='mx-auto flex justify-between gap-8'>
+
             <div className='flex leading-[30px] text-white'>
-            <h2 className=''>
+            <h2 className='z-10'>
                 CAKE POPS BY ANDREA
             </h2>
 
@@ -51,6 +52,9 @@ useEffect(() => {
             </div>
             <BiMenuAltRight />
         </div>
+        <div className='w-[250px]'>
+                <img src={bubble} className='mx-[-6px] mt-[-32px]'/>
+            </div>
 
     </motion.nav>
   )
