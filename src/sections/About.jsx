@@ -24,7 +24,7 @@ const About = () => {
           src={cake}
           alt="cake"
           className=" 
-          object-contain rounded-lg hover:scale-110 duration-300 shadow-lg"
+          object-contain rounded-lg hover:scale-110 duration-300"
         />
       </motion.div>
       <motion.div
@@ -38,7 +38,6 @@ const About = () => {
             to my heart, domestic violance. 10% of all proceeds go to 
             XXXX organization. 
         </p>
-
 
       </motion.div>
     </motion.div>
