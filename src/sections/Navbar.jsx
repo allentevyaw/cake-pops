@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {CiLollipop} from 'react-icons/ci'
-import {BiMenuAltRight} from 'react-icons/bi'
 import {motion} from 'framer-motion'
 import { navVariants } from '../../utils/motion'
 import bubble from '../assets/bubble.png'
@@ -9,54 +8,93 @@ import bubble from '../assets/bubble.png'
 
 
 const Navbar = () => {
-const [shadow, setShadow] = useState(false)
 
-useEffect(() => {
-    const handleShadow = () => {
-        if (window.scrollY >= 90) {
-            setShadow(true)
-        } else {
-            setShadow(false)
-        }
-    }
-    window.addEventListener('scroll', handleShadow)
-}, [])
+const [nav, setNav] = useState(false)
+const [hamburger, sethamburger] = useState(false)
+
+const handleHamburgerClick = () => {
+    sethamburger(prevState => !prevState)
+}
+const handleClick = () => setNav(prevNav => !prevNav)
+
+
+const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white 
+transition ease transform duration-300 bg-white`;
+
 
     
   return (
+    <div>
     <motion.nav 
-        className='w-full h-[70px] shadow-md text-[16px] font-extrabold
+        className='w-full h-[70px] shadow-md text-[14px] md:text-[16px] font-extrabold
          text-white br-gradient bg-[#F40076]'
             variants={navVariants}
             initial='hidden'
             whileInView='show'>           
 
-        <div className='mx-auto flex justify-between gap-8'>
-
-            <div className='flex leading-[30px] text-white'>
+        <div className='mx-auto flex justify-between gap-8 p-4'>
+            <div className='flex text-white items-center'>
             <h2 className='z-10'>
                 CAKE POPS BY ANDREA
             </h2>
 
             <motion.div
+            className='z-10'
             initial={{ scale: 1 }}
             whileInView={{ rotate: 360, scale: 1 }}
             transition={{
                 type: "spring",
                 stiffness: 180,
                 damping: 35,
-                delay: 2
+                delay: 1
             }}>
-                <CiLollipop className='text-[30px]'/>
+                <CiLollipop className='text-[20px] md:text-[30px]'/>
             </motion.div>
             </div>
-            <BiMenuAltRight />
-        </div>
-        <div className='w-[250px]'>
-                <img src={bubble} className='mx-[-6px] mt-[-32px]'/>
+            <div>
+                <ul className='md:flex items-center hidden'>
+                    <li>Menu</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </div>
 
+    <button
+      className="flex flex-col h-12 w-12 justify-center items-center group z-50 md:hidden"
+      onClick={handleClick}
+    >
+      <div
+        className={`${genericHamburgerLine} ${
+          nav
+            ? "rotate-45 translate-y-3"
+            : ""
+        }`}
+      />
+      <div
+        className={`${genericHamburgerLine} ${
+            nav ? "opacity-0" : ""
+        }`}
+      />
+      <div
+        className={`${genericHamburgerLine} ${
+            nav
+            ? "-rotate-45 -translate-y-3"
+            : ""
+        }`}
+      />
+    </button>
+
+        </div>
+        <div className='w-[200px] md:w-[250px] z-0'>
+                <img src={bubble} className='mx-[-6px] mt-[-50px]'/>
+        </div>
     </motion.nav>
+    <div className={nav ? 'fixed left-0 top-0 w-full min-h-screen bg-[#1B2739]/70 z-40' : ''}>
+    <div className={nav ? 'fixed right-0 top-0 w-[50%] sm:w-[30%] h-screen bg-gradient-to-t from-white to-purple-300 p-10 ease-in duration-100 z-50' : 
+                        'fixed left-[-100] top-0 p-10'}></div>
+
+                        </div>
+    </div>
   )
 }
 
