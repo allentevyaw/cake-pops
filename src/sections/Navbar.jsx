@@ -52,7 +52,7 @@ transition ease transform duration-300 bg-white`;
             </motion.div>
             </div>
             <div>
-                <ul className='md:flex items-center hidden'>
+                <ul className='md:flex items-center hidden uppercase'>
                     <li>Menu</li>
                     <li>About</li>
                     <li>Contact</li>
@@ -91,17 +91,16 @@ transition ease transform duration-300 bg-white`;
     </motion.nav>
 
     <div className={nav ? 'md:hidden fixed left-0 top-0 w-full min-h-screen bg-[#1B2739]/70 z-40' : ''}>
-        <div className={nav ? 'fixed right-0 top-0 w-[50%] sm:w-[30%] h-screen bg-gradient-to-t from-white to-purple-300 p-10 ease-in duration-100 z-50' : 
+        <div className={nav ? 'fixed right-0 top-0 w-[45%] sm:w-[40%] h-screen bg-gradient-to-t from-white to-purple-300 p-10 ease-in duration-100 z-50' : 
                         'fixed left-[-100] top-0 p-10'}>
             <div className={nav ? 'flex' : 'hidden'}>
 
-            <ul className='py-8 flex-col text-2xl text-white'>
-                <li className='py-6'>Menu</li>
-                <li className='py-6'>About</li>
-                <li className='py-6'>Contact</li>
+            <ul className='py-8 flex-col text-2xl text-white uppercase mx-[-10px]'>
+                <li className='py-6 hover:text-pink-400 duration-100'>Menu</li>
+                <li className='py-6 hover:text-pink-400'>About</li>
+                <li className='py-6 hover:text-pink-400'>Contact</li>
             </ul>
             </div>
-
         </div>
     </div>
     </div>

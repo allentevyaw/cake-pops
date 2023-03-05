@@ -105,10 +105,11 @@ export const navVariants = {
       },
     },
   });
+
   
   export const rollIn = (direction) => ({
     hidden: {
-      x: direction === 'left' ? '-100%' : '100%',
+      x: direction === 'left' ? '-120%' : '100%',
       rotate: 120,
     },
     show: {

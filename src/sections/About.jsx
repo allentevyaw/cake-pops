@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { staggerContainer, fadeIn, rollIn } from '../../utils/motion';
-import cake from '../assets/happypop.png'
+import { staggerContainer, fadeIn, rollIn, slideIn } from '../../utils/motion';
+import cake from '../assets/confused.png'
 import styles from '../styles';
 
 
@@ -20,18 +20,20 @@ const About = () => {
         variants={rollIn('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img
-          src={cake}
-          alt="cake"
-          className=" 
-          object-contain rounded-lg hover:scale-110 duration-300"
-        />
+        <div className='max-w-[75%]'>
+            <img
+            src={cake}
+            alt="cake"
+            className=" 
+            object-contain rounded-lg hover:scale-110 duration-300"
+            />
+        </div>
       </motion.div>
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <h1 className='text-[36px] font-bold text-white'>WELCOME!</h1>
+        <h1 className='text-[36px] font-bold text-white'>Hi!</h1>
         <p>My name is Andrea, and I started Cake Pop's by Andrea
              because I have a passion for making delicious cake pop,
             and I wanted to find a way to raise money for a cause that is near and dear

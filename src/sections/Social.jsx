@@ -4,7 +4,7 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {BsPinterest} from 'react-icons/bs'
 import {SiEtsy} from 'react-icons/si'
 import {motion} from 'framer-motion'
-import { staggerContainer, fadeIn } from '../../utils/motion';
+import { staggerContainer, fadeIn, slideIn } from '../../utils/motion';
 import styles from '../styles';
 
 
@@ -23,25 +23,25 @@ const Social = () => {
     >
 <div className='flex justify-between px-12 text-[36px] text-white'>
 <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={fadeIn('right', 'tween', 0.2, 1)}
         className="hover:text-[#DF98FA] cursor-pointer"
       >
         <AiOutlineInstagram />
 </motion.div>
 <motion.div
-        variants={fadeIn('left', 'tween', 0.3, 1.5)}
+        variants={fadeIn('right', 'tween', 0.3, 1.5)}
         className="hover:text-[#DF98FA] cursor-pointer"
       >
         <HiOutlineMail />
 </motion.div>
 <motion.div
-        variants={fadeIn('left', 'tween', .4, 2)}
+        variants={fadeIn('right', 'tween', .4, 2)}
         className="hover:text-[#DF98FA] cursor-pointer"
       >
         <BsPinterest />
 </motion.div>
 <motion.div
-        variants={fadeIn('left', 'tween', .6, 3)}
+        variants={fadeIn('right', 'tween', .6, 3)}
         className="hover:text-[#DF98FA] cursor-pointer"
       >
         <SiEtsy />
