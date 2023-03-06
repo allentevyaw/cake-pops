@@ -2,7 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { slideIn, staggerContainer, textVariant } from '../../utils/motion';
 import styles from '../styles';
-import cake from '../assets/cake.png'
+import cake from '../assets/logo.png'
 import {CiLollipop} from 'react-icons/ci'
 
 

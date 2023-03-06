@@ -25,7 +25,7 @@ const About = () => {
             src={cake}
             alt="cake"
             className=" 
-            object-contain rounded-lg hover:scale-110 duration-300"
+            object-contain rounded-lg hover:rotate-12 duration-300"
             />
         </div>
       </motion.div>

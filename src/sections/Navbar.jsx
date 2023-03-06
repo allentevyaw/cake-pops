@@ -53,9 +53,9 @@ transition ease transform duration-300 bg-white`;
             </div>
             <div>
                 <ul className='md:flex items-center hidden uppercase'>
-                    <li>Menu</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li className='link-underline'>Menu</li>
+                    <li className='link-underline'>About</li>
+                    <li className='link-underline'>Contact</li>
                 </ul>
             </div>
 
@@ -91,7 +91,7 @@ transition ease transform duration-300 bg-white`;
     </motion.nav>
 
     <div className={nav ? 'md:hidden fixed left-0 top-0 w-full min-h-screen bg-[#1B2739]/70 z-40' : ''}>
-        <div className={nav ? 'fixed right-0 top-0 w-[45%] sm:w-[40%] h-screen bg-gradient-to-t from-white to-purple-300 p-10 ease-in duration-100 z-50' : 
+        <div className={nav ? 'fixed right-0 top-0 w-[45%] sm:w-[40%] h-screen bg-gradient-to-t from-[#F40076] to-purple-300 p-10 ease-in duration-100 z-50' : 
                         'fixed left-[-100] top-0 p-10'}>
             <div className={nav ? 'flex' : 'hidden'}>
 
