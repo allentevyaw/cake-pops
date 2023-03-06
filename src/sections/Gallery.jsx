@@ -22,39 +22,45 @@ from-white to-[#F40076]">
         <div class="w-1/2 p-1 md:p-2">
           <img
             alt="oreo"
-            class="block h-full w-full rounded-lg object-cover object-center shadow-md"
+            class="block h-full w-full rounded-lg object-cover 
+            object-center shadow-md duration-300 ease-in-out hover:scale-110"
             src={oreo} />
         </div>
         <div class="w-1/2 p-1 md:p-2">
           <img
             alt="carrot2"
-            class="block h-full w-full rounded-lg object-cover object-center shadow-md"
+            class="block h-full w-full rounded-lg object-cover 
+            object-center shadow-md duration-300 ease-in-out hover:scale-110"
             src={carrot2} />
         </div>
         <div class="w-full p-1 md:p-2">
           <img
             alt="carrot"
-            class="block h-full w-full rounded-lg object-cover object-center shadow-md"
+            class="block h-full w-full rounded-lg object-cover 
+            object-center shadow-md"
             src={carrot} />
         </div>
       </div>
-      <div class="flex w-1/2 flex-wrap">
+      <div class="flex w-1/2 flex-wrap over overflow-hidden">
         <div class="w-full p-1 md:p-2">
           <img
             alt="sprinkle"
-            class="block h-full w-full rounded-lg object-cover object-center shadow-md"
+            class="block h-full w-full rounded-lg object-cover 
+            object-center shadow-md"
             src={sprinkle} />
         </div>
         <div class="w-1/2 p-1 md:p-2">
           <img
             alt="carrot2"
-            class="block h-full w-full rounded-lg object-cover object-center shadow-md"
+            class="block h-full w-full rounded-lg object-cover 
+            object-center shadow-md duration-300 ease-in-out hover:scale-110"
             src={carrot2} />
         </div>
-        <div class="w-1/2 p-1 md:p-2">
+        <div class="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
           <img
             alt="oreo"
-            class="block h-full w-full rounded-lg object-cover object-center shadow-md"
+            class="block h-full w-full rounded-lg object-cover 
+            object-center shadow-md duration-300 ease-in-out hover:scale-110"
             src={oreo} />
         </div>
       </div>
