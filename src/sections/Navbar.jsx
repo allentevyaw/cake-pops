@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {CiLollipop} from 'react-icons/ci'
 import {motion} from 'framer-motion'
 import { navVariants } from '../../utils/motion'
-import bubble from '../assets/bubble.png'
+import bubble from '../assets/drip.png'
 
 
 
@@ -86,7 +86,7 @@ transition ease transform duration-300 bg-white`;
 
         </div>
         <div className='w-[200px] md:w-[250px] z-0'>
-                <img src={bubble} className='mx-[-6px] mt-[-50px]'/>
+                <img src={bubble} className='mx-[-6px] my-[-10px]'/>
         </div>
     </motion.nav>
 
