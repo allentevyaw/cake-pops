@@ -19,8 +19,9 @@ const Hero = () => {
     >
       <div className="flex justify-center items-center flex-col z-10">
         <motion.h1 
-        variants={textVariant(1.1)} className={`${styles.heroHeading}
-        text-transparent bg-clip-text bg-gradient-to-t from-purple-300 to-[#F40076]`}>
+        variants={textVariant(1.1)} 
+        className={`${styles.heroHeading} text-transparent bg-clip-text 
+        bg-gradient-to-t from-purple-300 to-[#F40076]`}>
           Cake pops
         </motion.h1>
 

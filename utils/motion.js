@@ -160,3 +160,16 @@ export const navVariants = {
       },
     },
   };
+
+  export const fade = ({
+    hidden: {
+      opacity:0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        delay: .5,
+        duration: 1
+      },
+    },
+  });
