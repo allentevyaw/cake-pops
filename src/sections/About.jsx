@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { staggerContainer, fadeIn, rollIn, slideIn } from '../../utils/motion';
+import { staggerContainer, rollIn, slideIn } from '../../utils/motion';
 import cake from '../assets/confused.png'
 import styles from '../styles';
 
@@ -8,7 +8,7 @@ import styles from '../styles';
 
 const About = () => {
   return (
-    <section className={`${styles.paddings} relative z-10 bg-gradient-to-b from-[#F40076] to-white`}>
+    <section className={`${styles.paddings} relative z-10 bg-gradient-to-b from-[#F40076] to-purple-300 text-white`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -34,11 +34,25 @@ const About = () => {
         className="flex-[0.75] flex justify-center flex-col"
       >
         <h1 className='text-[36px] font-bold text-white'>Hi!</h1>
-        <p>My name is Andrea, and I started Cake Pop's by Andrea
-             because I have a passion for making delicious cake pop,
-            and I wanted to find a way to raise money for a cause that is near and dear
-            to my heart, domestic violance. 10% of all proceeds go to 
-            XXXX organization. 
+        <p className='pb-3'>
+        Welcome to the magical world of Cake Pops by Andrea! We're a team of passionate 
+        creators who believe that life is too short to not enjoy the little things, 
+        especially when they're as delicious as our bite-sized treats.
+        </p>
+        <p className='pb-3'> 
+          Our journey started with a love for all things sweet and a desire to 
+          create something truly unique. We hand-create each of our cake pops
+           with fresh ingredients and decorate them with care, to bring a smile 
+           to your face with every bite. From classic flavors like vanilla and 
+           chocolate to funky combinations like fruity-pebbles, cinnamon toast crunch
+          and strawberry cheesecake, we've got something to satisfy every sweet tooth.
+        </p>
+          <p> 
+          We're all about spreading joy and happiness through our cake pops, 
+          and we can't wait to share our love for baking with you. So why not 
+          treat yourself to a little happiness today? Order now and experience 
+          the magic of Cake Pops by Andrea!
+
         </p>
 
       </motion.div>

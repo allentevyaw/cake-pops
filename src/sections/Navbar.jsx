@@ -3,6 +3,7 @@ import {CiLollipop} from 'react-icons/ci'
 import {motion} from 'framer-motion'
 import { navVariants } from '../../utils/motion'
 import bubble from '../assets/drip.png'
+import {Link} from 'react-router-dom'
 
 
 
@@ -53,9 +54,9 @@ transition ease transform duration-300 bg-white`;
             </div>
             <div>
                 <ul className='md:flex items-center hidden uppercase'>
-                    <li className='link-underline'>Menu</li>
-                    <li className='link-underline'>About</li>
-                    <li className='link-underline'>Contact</li>
+                      <li className='link-underline'>Menu</li>
+                      <li className='link-underline'>About</li>
+                      <li className='link-underline'>Contact</li>
                 </ul>
             </div>
 

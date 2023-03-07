@@ -12,7 +12,7 @@ const Gallery = () => {
   return (
 
 <section className="overflow-hidden text-neutral-700 bg-gradient-to-b 
-from-white to-[#F40076]">
+from-purple-300 to-[#F40076]">
 
 <motion.div
       variants={staggerContainer}
@@ -21,14 +21,15 @@ from-white to-[#F40076]">
       viewport={{ once: false, amount: 0.25 }}>
 
   <motion.div 
-  className='flex justify-center'
+  className='flex flex-col justify-center items-center'
   variants={fade}
   initial='hidden'
   whileInView='show' 
   >
-    <h1 className='text-2xl font-bold uppercase text-[#F40076]'>
-      Gallery
+    <h1 className='text-2xl font-bold uppercase text-white'>
+      Checkout our bestsellers
       </h1>
+      <p>A little bit of magic in every pop</p>
   </motion.div>
     
   <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">

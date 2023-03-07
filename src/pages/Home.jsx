@@ -9,11 +9,10 @@ import Gallery from '../sections/Gallery'
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
-      <Social />
       <About />
       <Gallery />
+      <Social />
     </div>
   )
 }
