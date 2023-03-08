@@ -10,9 +10,9 @@ const Home = () => {
   return (
     <div>
       <Hero />
+      <Social />
       <Photos />
       <About />
-      <Social />
     </div>
   )
 }

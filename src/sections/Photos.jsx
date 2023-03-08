@@ -7,9 +7,11 @@ import sprinkle from '../assets/sprinkle.jpg'
 const photos = () => {
   return (
 
-<div class="flex flex-col bg-[#F40076] m-auto p-auto">
+<div class="flex flex-col bg-white m-auto p-auto">
       <h1
-        class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-2xl md:text-4xl text-white"
+        class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 
+        font-bold text-2xl md:text-4xl text-transparent bg-clip-text 
+        bg-gradient-to-t from-purple-300 to-[#F40076] uppercase"
       >
         Checkout our best sellers!
       </h1>
@@ -24,13 +26,15 @@ const photos = () => {
           {/* Card #1 */}
           <div class="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-lg shadow-md bg-gradient-to-t from-[#F40076] to-purple-300 hover:shadow-xl transition-shadow duration-300 ease-in-out text-black"
+              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md 
+              bg-gradient-to-b from-[#F40076] to-purple-300 hover:shadow-xl 
+              transition-shadow duration-300 ease-in-out text-black"
             >
       <img
         class="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
         src={oreo}
         alt="" />
-    <div class="p-6">
+    <div class="p-6 flex flex-col justify-center text-center items-center">
       <h5
         class="mb-2 text-xl leading-tight font-extrabold">
         Cookies 'n Cream Crush
@@ -45,15 +49,16 @@ const photos = () => {
 {/* Card #2 */}
           <div class="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-lg shadow-md bg-gradient-to-t from-[#F40076] to-purple-300 hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md bg-gradient-to-t from-[#F40076] to-purple-300 hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
+      
       <img
         class="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
         src={carrot}
         alt="" />
-    <div class="p-6">
+    <div class="p-6 flex flex-col justify-center text-center items-center">
       <h5
-        class="mb-2 text-xl font-medium leading-tight">
+        class="mb-2 text-xl leading-tight font-extrabold">
         Carrot Cake Crusader
       </h5>
       <p class="mb-4 text-base">
@@ -66,15 +71,15 @@ const photos = () => {
 {/* Card #3 */}
           <div class="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
       <img
         class="rounded-t-lg w-96 h-60 object-cover"
         src={carrot2}
         alt="" />
-    <div class="p-6">
+    <div class="p-6 flex flex-col justify-center text-center items-center">
       <h5
-        class="mb-2 text-xl font-medium leading-tight">
+        class="mb-2 text-xl leading-tight font-extrabold">
         Card title
       </h5>
       <p class="mb-4 text-base">
@@ -88,13 +93,13 @@ const photos = () => {
 {/* Card #4 */}
           <div class="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
       <img
         class="rounded-t-lg w-96 h-60 object-cover"
         src={sprinkle}
         alt="" />
-    <div class="p-6">
+    <div class="p-6 flex flex-col justify-center text-center items-center">
       <h5
         class="mb-2 text-xl font-medium leading-tight">
         Card title
@@ -109,7 +114,7 @@ const photos = () => {
 
           <div class="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             ></div>
           {/* </div>
           <div class="inline-block px-3">

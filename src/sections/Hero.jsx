@@ -9,7 +9,8 @@ import {CiLollipop} from 'react-icons/ci'
 
 const Hero = () => {
   return (
-    <section className='bg-gradient-to-b from-white to-[#F40076] pb-20 w-full'>
+    // <section className='bg-gradient-to-b from-white to-[#F40076] pb-20 w-full'>
+    <section className='bg-white pb-20 w-full'>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -30,7 +31,8 @@ const Hero = () => {
           className="flex flex-row justify-center items-center"
         >
           <h1 className={`${styles.subHeroHeading}
-          text-white`}>by</h1>
+          text-transparent bg-clip-text 
+          bg-gradient-to-t from-[#F40076] to-purple-300`}>by</h1>
         </motion.div>
 
         <motion.h1 
