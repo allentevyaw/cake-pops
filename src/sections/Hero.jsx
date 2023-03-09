@@ -16,7 +16,7 @@ const Hero = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`mx-auto flex flex-col lg:flex-row-reverse lg:justify-center`}
+      className={`mx-auto flex flex-col lg:flex-row-reverse justify-center lg:gap-24`}
     >
       <div className="flex justify-center items-center flex-col z-10 mt-12">
         <motion.h1 
@@ -54,20 +54,20 @@ const Hero = () => {
           rounded-tl-[140px] rounded-tr-[140px] rounded-br-[140px] 
           rounded-bl-[140px] z-10 relative pb-7"
         />
-
-
-        <button className='bg-gradient-to-r from-purple-300 to-[#F40076] font-semibold text-white 
-        rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200'>
-          <span className='flex items-center'>
-              <h1>LET'S POP </h1>
-              <CiLollipop className='hover:rotate-180 duration-300 text-[22px]'/>
-            </span> 
-        </button> 
       </div>
 
 
         </motion.div>
       </motion.div>
+      <div className='w-full flex justify-center'>
+        <button className='bg-gradient-to-r from-purple-300 to-[#F40076] font-semibold text-white 
+          rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200 flex justify-center'>
+            <span className='flex items-center'>
+                <h1>LET'S POP </h1>
+                <CiLollipop className='hover:rotate-180 duration-300 text-[22px]'/>
+              </span> 
+          </button> 
+      </div>
     </section>
   )
 }

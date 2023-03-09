@@ -3,7 +3,6 @@ import {CiLollipop} from 'react-icons/ci'
 import {motion} from 'framer-motion'
 import { navVariants } from '../../utils/motion'
 import bubble from '../assets/drip.png'
-import {Link} from 'react-router-dom'
 
 
 
@@ -92,7 +91,7 @@ transition ease transform duration-300 bg-white`;
     </motion.nav>
 
     <div className={nav ? 'md:hidden fixed left-0 top-0 w-full min-h-screen bg-[#1B2739]/70 z-40' : ''}>
-        <div className={nav ? 'fixed right-0 top-0 w-[45%] sm:w-[40%] h-screen bg-gradient-to-t from-[#F40076] to-purple-300 p-10 ease-in duration-100 z-50' : 
+        <div className={nav ? 'fixed right-0 top-0 w-[45%] sm:w-[30%] h-screen bg-gradient-to-t from-[#F40076] to-purple-300 p-10 ease-in duration-100 z-50' : 
                         'fixed left-[-100] top-0 p-10'}>
             <div className={nav ? 'flex' : 'hidden'}>
 

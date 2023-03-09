@@ -3,7 +3,7 @@ import {AiOutlineInstagram} from 'react-icons/ai'
 import {HiOutlineMail} from 'react-icons/hi'
 import {FaTiktok} from 'react-icons/fa'
 import {motion} from 'framer-motion'
-import { staggerContainer, fadeIn, slideIn } from '../../utils/motion';
+import { staggerContainer, fadeIn } from '../../utils/motion';
 import styles from '../styles';
 
 
