@@ -8,7 +8,7 @@ import styles from '../styles';
 
 const About = () => {
   return (
-    <section className={`${styles.paddings} relative z-10 bg-gradient-to-b from-[#F40076] to-purple-300 text-white`}>
+    <section className={`${styles.paddings} relative z-10 bg-gradient-to-t from-[#F40076] to-[#FFFBF7] text-white`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

@@ -7,7 +7,7 @@ import sprinkle from '../assets/sprinkle.jpg'
 const photos = () => {
   return (
 
-<div className="flex flex-col bg-white m-auto p-auto">
+<div className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
       <h1
         className="flex justify-center py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 
         font-bold text-2xl md:text-4xl text-transparent bg-clip-text 

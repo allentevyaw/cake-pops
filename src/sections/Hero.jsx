@@ -10,15 +10,15 @@ import {CiLollipop} from 'react-icons/ci'
 const Hero = () => {
   return (
     // <section className='bg-gradient-to-b from-white to-[#F40076] pb-20 w-full'>
-    <section className='bg-white pb-20 w-full'>
+    <section className='bg-[#FFFBF7] pb-20 w-full'>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`mx-auto flex flex-col mt-12`}
+      className={`mx-auto flex flex-col lg:flex-row-reverse lg:justify-center`}
     >
-      <div className="flex justify-center items-center flex-col z-10">
+      <div className="flex justify-center items-center flex-col z-10 mt-12">
         <motion.h1 
         variants={textVariant(1.1)} 
         className={`${styles.heroHeading} text-transparent bg-clip-text 

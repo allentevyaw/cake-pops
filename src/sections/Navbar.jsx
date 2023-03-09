@@ -25,16 +25,16 @@ transition ease transform duration-300 bg-white`;
 
     
   return (
-    <div>
+    <div className=''>
     <motion.nav 
         className='w-full h-[70px] shadow-md text-[14px] md:text-[16px] font-extrabold
-         text-white br-gradient bg-[#F40076]'
+         text-[#FFFBF7] br-gradient bg-[#F40076]'
             variants={navVariants}
             initial='hidden'
             whileInView='show'>           
 
         <div className='mx-auto flex justify-between gap-8 p-4'>
-            <div className='flex text-white items-center'>
+            <div className='flex text-[#FFFBF7] items-center'>
             <h2 className='z-10'>
                 CAKE POPS BY ANDREA
             </h2>
@@ -96,7 +96,7 @@ transition ease transform duration-300 bg-white`;
                         'fixed left-[-100] top-0 p-10'}>
             <div className={nav ? 'flex' : 'hidden'}>
 
-            <ul className='py-8 flex-col text-2xl text-white uppercase mx-[-10px]'>
+            <ul className='py-8 flex-col text-2xl text-[#FFFBF7] uppercase mx-[-10px]'>
                 <li className='py-6 hover:text-pink-400 duration-100'>Menu</li>
                 <li className='py-6 hover:text-pink-400'>About</li>
                 <li className='py-6 hover:text-pink-400'>Contact</li>

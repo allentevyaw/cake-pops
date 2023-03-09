@@ -21,21 +21,21 @@ const Social = () => {
     >
   <motion.div
           variants={fadeIn('right', 'tween', 0.2, 0.5)}
-          className="hover:text-[#DF98FA] cursor-pointer pr-16"
+          className="hover:text-[#F40076] cursor-pointer pr-16"
         >
-            <AiOutlineInstagram />
+            <AiOutlineInstagram className='hover:scale-110 duration-200'/>
   </motion.div>
   <motion.div
           variants={fadeIn('right', 'tween', 0.3, 1)}
-          className="hover:text-[#DF98FA] cursor-pointer"
+          className="hover:text-[#F40076] cursor-pointer"
         >
-            <HiOutlineMail />
+            <HiOutlineMail className='hover:scale-110 duration-200'/>
   </motion.div>
   <motion.div
           variants={fadeIn('right', 'tween', 0.4, 1.5)}
-          className="hover:text-[#DF98FA] cursor-pointer pl-16"
+          className="hover:text-[#F40076] cursor-pointer pl-16"
         >
-            <FaTiktok />
+            <FaTiktok className='hover:scale-110 duration-200'/>
   </motion.div>
 </motion.div>
   </section>
