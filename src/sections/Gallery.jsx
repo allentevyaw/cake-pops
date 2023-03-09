@@ -6,10 +6,10 @@ import sprinkle from '../assets/sprinkle.jpg'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../../utils/motion';
 
-const photos = () => {
+const Gallery = () => {
   return (
-
-<motion.div 
+    <div>
+        <motion.div 
 className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
       <h1
         className="flex justify-center py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 
@@ -151,7 +151,8 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
         </div>
       </div>
 </motion.div>
+    </div>
   )
 }
 
-export default photos
+export default Gallery
