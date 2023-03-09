@@ -47,14 +47,6 @@ const About = () => {
            chocolate to funky combinations like fruity-pebbles, cinnamon toast crunch
           and strawberry cheesecake, we've got something to satisfy every sweet tooth.
         </p>
-          <p> 
-          We're all about spreading joy and happiness through our cake pops, 
-          and we can't wait to share our love for baking with you. So why not 
-          treat yourself to a little happiness today? Order now and experience 
-          the magic of Cake Pops by Andrea!
-
-        </p>
-
       </motion.div>
     </motion.div>
   </section>

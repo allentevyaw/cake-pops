@@ -7,39 +7,42 @@ import sprinkle from '../assets/sprinkle.jpg'
 const photos = () => {
   return (
 
-<div class="flex flex-col bg-white m-auto p-auto">
+<div className="flex flex-col bg-white m-auto p-auto">
       <h1
-        class="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 
+        className="flex justify-center py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 
         font-bold text-2xl md:text-4xl text-transparent bg-clip-text 
         bg-gradient-to-t from-purple-300 to-[#F40076] uppercase"
       >
         Checkout our best sellers!
       </h1>
+      <p>
+
+      </p>
 
       <div
-        class="flex overflow-x-scroll pb-10 hide-scroll-bar"
+        className="flex overflow-x-scroll pb-10 hide-scroll-bar"
       >
         <div
-          class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10"
+          className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10"
         >
 
           {/* Card #1 */}
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md 
+              className="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md 
               bg-gradient-to-b from-[#F40076] to-purple-300 hover:shadow-xl 
-              transition-shadow duration-300 ease-in-out text-black"
+              transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
             >
       <img
-        class="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
+        className="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
         src={oreo}
         alt="" />
-    <div class="p-6 flex flex-col justify-center text-center items-center">
+    <div className="p-6 flex flex-col justify-center text-center items-center">
       <h5
-        class="mb-2 text-xl leading-tight font-extrabold">
+        className="mb-2 text-xl leading-tight font-extrabold">
         Cookies 'n Cream Crush
       </h5>
-      <p class="mb-4 text-base">
+      <p className="mb-4 text-base">
       Crushed Oreo cookies and chocolate cake coated in a smooth, creamy white chocolate shell.
       </p>
       </div>
@@ -47,21 +50,23 @@ const photos = () => {
           </div>
 
 {/* Card #2 */}
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md bg-gradient-to-t from-[#F40076] to-purple-300 hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              className="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md
+              bg-gradient-to-b from-[#F40076] to-purple-300 hover:shadow-xl 
+              transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
             >
       
       <img
-        class="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
+        className="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
         src={carrot}
-        alt="" />
-    <div class="p-6 flex flex-col justify-center text-center items-center">
+        alt="carrot" />
+    <div className="p-6 flex flex-col justify-center text-center items-center">
       <h5
-        class="mb-2 text-xl leading-tight font-extrabold">
+        className="mb-2 text-xl leading-tight font-extrabold">
         Carrot Cake Crusader
       </h5>
-      <p class="mb-4 text-base">
+      <p className="mb-4 text-base">
       Moist carrot cake and creamy cream cheese frosting, coated in a velvety white chocolate shell.
       </p>
       </div>
@@ -69,20 +74,22 @@ const photos = () => {
           </div>
 
 {/* Card #3 */}
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              className="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md
+              bg-gradient-to-b from-[#F40076] to-purple-300 hover:shadow-xl 
+              transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
             >
       <img
-        class="rounded-t-lg w-96 h-60 object-cover"
+        className="rounded-t-lg w-96 h-60 object-cover"
         src={carrot2}
-        alt="" />
-    <div class="p-6 flex flex-col justify-center text-center items-center">
+        alt="carrot" />
+    <div className="p-6 flex flex-col justify-center text-center items-center">
       <h5
-        class="mb-2 text-xl leading-tight font-extrabold">
+        className="mb-2 text-xl leading-tight font-extrabold">
         Card title
       </h5>
-      <p class="mb-4 text-base">
+      <p className="mb-4 text-base">
         Some quick example text to build on the card title and make up the
         bulk of the card's content.
       </p>
@@ -91,20 +98,22 @@ const photos = () => {
           </div>
 
 {/* Card #4 */}
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              className="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md
+              bg-gradient-to-b from-[#F40076] to-purple-300 hover:shadow-xl 
+              transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
             >
       <img
-        class="rounded-t-lg w-96 h-60 object-cover"
+        className="rounded-t-lg w-96 h-60 object-cover"
         src={sprinkle}
-        alt="" />
-    <div class="p-6 flex flex-col justify-center text-center items-center">
+        alt="sprinkle" />
+    <div className="p-6 flex flex-col justify-center text-center items-center">
       <h5
-        class="mb-2 text-xl font-medium leading-tight">
+        className="mb-2 text-xl font-medium leading-tight">
         Card title
       </h5>
-      <p class="mb-4 text-base">
+      <p className="mb-4 text-base">
         Some quick example text to build on the card title and make up the
         bulk of the card's content.
       </p>
@@ -112,9 +121,11 @@ const photos = () => {
             </div>
           </div>
 
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              className="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md
+              bg-gradient-to-b from-[#F40076] to-purple-300
+               hover:shadow-xl transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
             ></div>
           {/* </div>
           <div class="inline-block px-3">
