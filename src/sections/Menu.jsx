@@ -1,8 +1,21 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+import { fadeIn, staggerContainer } from '../../utils/motion';
+
 
 const Menu = () => {
   return (
-    <div>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={` max-w-[1000px] w-full flex flex-col md:flex-row gap-8`}
+    >
+
+    <motion.div
+    variants={fadeIn('right', 'tween', 0.2, 0.5)}
+    >
         <ul>
             <li>"Red Velvet Rascal": A mischievous little cake pop with 
                 a creamy center and a coat of smooth, rich white chocolate.
@@ -48,7 +61,8 @@ const Menu = () => {
                 a sprinkle of sea salt.
             </li>
         </ul>
-    </div>
+    </motion.div>
+    </motion.div>
   )
 }
 

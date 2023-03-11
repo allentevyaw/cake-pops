@@ -4,31 +4,35 @@ import carrot from '../assets/carrot.jpg'
 import carrot2 from '../assets/carrot2.jpg'
 import sprinkle from '../assets/sprinkle.jpg'
 import {motion} from 'framer-motion'
-import { fadeIn } from '../../utils/motion';
+import { fadeIn, staggerContainer } from '../../utils/motion';
 
 const Gallery = () => {
   return (
-    <div>
-        <motion.div 
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+    >
+
+        <div 
 className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
-      <h1
+      <motion.h1
         className="flex justify-center py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 
         font-bold text-2xl md:text-4xl text-transparent bg-clip-text 
         bg-gradient-to-t from-purple-300 to-[#F40076] uppercase"
-        variants={fadeIn('right', 'tween', 0.2, 0.5)}
+        variants={fadeIn('up', 'tween', 0.4, 1)}
       >
         Checkout our best sellers!
-      </h1>
-      <p>
+      </motion.h1>
 
-      </p>
 
       <div
         className="flex overflow-x-scroll pb-10 hide-scroll-bar"
       >
-        <div
+        <motion.div
           className="flex flex-nowrap ml-5"
-          variants={fadeIn('right', 'tween', 0.2, 0.5)}
+          variants={fadeIn('up', 'tween', 0.4, 1)}
         >
 
           {/* Card #1 */}
@@ -148,11 +152,11 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
               class="w-96 h-96 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             ></div> */}
           </div>
-        </div>
+        </motion.div>
       </div>
-</motion.div>
-    </div>
-  )
+</div>
+</motion.div>  
+)
 }
 
 export default Gallery

@@ -10,7 +10,7 @@ const Footer = () => {
     <div
         className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block">
-        <span>Get connected with us on social networks:</span>
+        <span>Get connected with us on our socials:</span>
         </div>
         <div className="flex justify-center text-2xl">
         <a href="#!" className="mr-6 :text-neutral-200 hover:text-[#F40076] hover:scale-125 duration-200">

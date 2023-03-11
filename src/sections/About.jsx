@@ -8,34 +8,34 @@ import styles from '../styles';
 
 const About = () => {
   return (
-    <section className={`${styles.paddings} relative z-10 bg-gradient-to-t from-[#F40076] to-[#FFFBF7] text-white`}>
+    <section className={`${styles.paddings} relative z-10 bg-[#FFFBF7] text-[#2B2B2B] flex justify-center`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={` max-w-[1000px] w-full grid sm:grid-cols-2 gap-8`}
+      className={` max-w-[1000px] w-full flex flex-col md:flex-row gap-8`}
     >
       <motion.div
         variants={rollIn('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <div className='max-w-[75%]'>
+        <div className='max-w-[50%]'>
             <img
             src={cake}
             alt="cake"
             className=" 
-            object-contain rounded-lg hover:rotate-12 duration-300"
+            object-contain rounded-lg flex lg:hidden"
             />
         </div>
       </motion.div>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] flex justify-center flex-col"
+        className="flex justify-center flex-col text-center"
       >
-        <h1 className='text-[36px] font-bold text-white'>Hi!</h1>
+        <h1 className='text-[36px] font-bold pb-4'>WELCOME!</h1>
         <p className='pb-3'>
-        Welcome to the magical world of Cake Pops by Andrea! We're a team of passionate 
+        To the magical world of <span className='text-[#F40076] font-semibold'>Cake Pops by Andrea!</span> We're a team of passionate 
         creators who believe that life is too short to not enjoy the little things, 
         especially when they're as delicious as our bite-sized treats.
         </p>
@@ -43,14 +43,14 @@ const About = () => {
           Our journey started with a love for all things sweet and a desire to 
           create something truly unique. We hand-create each of our cake pops
            with fresh ingredients and decorate them with care, to bring a smile 
-           to your face with every bite. From classic flavors like vanilla and 
-           chocolate to funky combinations like fruity-pebbles, cinnamon toast crunch
-          and strawberry cheesecake, we've got something to satisfy every sweet tooth.
+           to your face with every bite. From classic flavors like <span className='text-[#F40076] font-semibold'>vanilla</span> and 
+           <span className='text-[#F40076] font-semibold'> chocolate</span> to funky combinations like <span className='text-[#F40076] font-semibold'>fruity-pebbles, cinnamon toast crunch</span> and 
+           <span className='text-[#F40076] font-semibold'> strawberry
+            cheesecake</span>, we've got something to satisfy every sweet tooth.
         </p>
       </motion.div>
     </motion.div>
   </section>
-    // <div className='w-full h-screen bg-[#F40076]'>About</div>
   )
 }
 

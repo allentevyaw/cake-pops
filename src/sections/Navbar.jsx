@@ -6,7 +6,6 @@ import bubble from '../assets/drip.png'
 
 
 
-
 const Navbar = () => {
 
 const [nav, setNav] = useState(false)
