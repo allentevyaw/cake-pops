@@ -14,7 +14,7 @@ const About = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={` max-w-[1000px] w-full flex flex-col md:flex-row gap-8`}
+      className={` max-w-[800px] w-full flex flex-col md:flex-row gap-8`}
     >
       <motion.div
         variants={rollIn('left')}

@@ -1,4 +1,4 @@
-import { Link, BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from "./pages/Home"
 import Navbar from "./sections/Navbar"
 import Footer from "./sections/Footer"
@@ -10,8 +10,12 @@ function App() {
   return (
     <div >
       <Navbar />
-      <Home />
-      <Contact />
+  <BrowserRouter >
+    <Routes>
+      <Route path='/cake-pops/' element={<Home />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
+  </BrowserRouter>
       <Footer />
     </div>
   )
