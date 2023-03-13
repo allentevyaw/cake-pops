@@ -2,6 +2,8 @@ import React from 'react'
 import {AiOutlineInstagram} from 'react-icons/ai'
 import {HiOutlineMail} from 'react-icons/hi'
 import {FaTiktok} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
   return (
@@ -47,18 +49,18 @@ const Footer = () => {
             Useful links
             </h6>
             <p className="mb-4">
-            <a href="#!" className="text-neutral-200 hover:text-[#F40076]"
-                >Home</a
+            <Link to='/cake-pops' className="text-neutral-200 hover:text-[#F40076]"
+                >Home</Link
             >
             </p>
             <p className="mb-4">
-            <a href="#!" className="text-neutral-200 hover:text-[#F40076]"
-                >Menu</a
+            <Link to='/cake-pops/menu' className="text-neutral-200 hover:text-[#F40076]"
+                >Menu</Link
             >
             </p>
             <p className="">
-            <a href="#!" className="text-neutral-200 hover:text-[#F40076]"
-                >About</a
+            <Link to='/cake-pops/contact' className="text-neutral-200 hover:text-[#F40076]"
+                >Contact</Link
             >
             </p>
         </div>
@@ -69,7 +71,7 @@ const Footer = () => {
             Contact
             </h6>
             <p className="flex items-center justify-center md:justify-start">
-            info@example.com
+            cakepopsbyandrea@yahoo.com
             </p>
         </div>
         </div>
