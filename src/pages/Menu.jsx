@@ -6,16 +6,14 @@ import {CiLollipop} from 'react-icons/ci'
 
 
 
-
-
 const Menu = () => {
-const { title, subtitle, menuItems, btnText } = menuData;
-  
+
+const { title, subtitle, menuItems } = menuData;
 
   return (
-    <section className='min-h-[780px] bg-[#FFFBF7] text-[#2B2B2B]'>
+    <section className=' bg-[#FFFBF7] text-[#2B2B2B] p-8'>
       {/* background */}
-      <div className='w-full max-w-[1800px]'></div>
+      <div className='w-full'></div>
       {/* text */}
       <div>
         <motion.div
@@ -23,11 +21,11 @@ const { title, subtitle, menuItems, btnText } = menuData;
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.1 }}
-          className='container mx-auto flex flex-col items-center text-center'
+          className='container mx-auto flex flex-col items-center text-center justify-center'
         >
           <motion.h2
             variants={fadeIn('down', 'tween', 0.2, 1.6)}
-            className='capitalize max-w-[400px] text-center text-[36px] font-bold'
+            className='capitalize text-center text-[36px] font-bold'
           >
             {title}
           </motion.h2>
@@ -57,37 +55,37 @@ const { title, subtitle, menuItems, btnText } = menuData;
         }}
         className=''
       >
-        <div className='container mx-auto'>
-          <div className='min-h-[590px] mb-8 md:mb-4 xl:mb-16'>
+        <div className='container mx-auto flex justify-center'>
+          <div className='mb-8 md:mb-4 xl:mb-16'>
             {/* grid */}
-            <div className='grid grid-cols-1 lg:grid-cols-4 min-h-[590px]'>
+            <div className=''>
               {menuItems.map((item, index) => {
                 // destructure item
                 const { image, name, price, description } = item;
                 return (
                   <div key={index}>
-                    <div className='flex flex-row lg:flex-col h-full'>
+                    <div className='flex h-full'>
                       {/* image */}
                       {/* reverse order for the first image and the last one */}
                       <div
-                        className={`w-[45%] md:w-auto ${
+                        className={`w-auto ${
                           index === 1 || index === 3
-                            ? 'lg:order-1'
+                            ? 'order-1'
                             : 'order-none'
                         } `}
                       >
-                        <img src={image} alt='' className='w-48 h-48 md:w-96 md:h-96'/>
+                        <img src={image} alt={name} className='w-56 h-56 md:w-72 md:h-72 rounded-lg'/>
                       </div>
                       {/* text */}
-                      <div className='bg-white flex-1 flex flex-col justify-center px-6 lg:p-12 lg:max-h-[250px] xl:max-h-max'>
-                        <div className='text-center'>
-                          <div className='text-xl font-semibold text-dark xl:text-2xl'>
+                      <div className='bg-white flex flex-col justify-center md:p-6 w-[51%]'>
+                        <div className='text-center flex-col'>
+                          <div className='text-l font-semibold text-dark xl:text-2xl'>
                             {name}
                           </div>
-                          <div className='my-1 text-[20px] lg:text-[40px] lg:my-6 text-accent font-semibold'>
+                          <div className='my-1 text-[24px] lg:text-[40px] lg:my-6 text-accent font-semibold'>
                             {price}
                           </div>
-                          <div>{description}</div>
+                          <div className='px-4 text-[11px]'>{description}</div>
                         </div>
                       </div>
                     </div>
@@ -96,13 +94,16 @@ const { title, subtitle, menuItems, btnText } = menuData;
               })}
             </div>
           </div>
+        </div>
+
           <button className='bg-gradient-to-r from-purple-300 to-[#F40076] font-semibold text-white 
           rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200 flex justify-center'>
             <span className='flex items-center'>
                 <h1>LET'S POP </h1>
                 <CiLollipop className='hover:rotate-180 duration-300 text-[22px]'/>
               </span> 
-          </button>         </div>
+          </button>  
+
       </motion.div>
     </section>
   )
