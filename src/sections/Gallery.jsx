@@ -1,8 +1,8 @@
 import React from 'react'
 import oreo from '../assets/oreo.jpg'
-import carrot from '../assets/carrot.jpg'
 import carrot2 from '../assets/carrot2.jpg'
 import sprinkle from '../assets/sprinkle.jpg'
+import fruity from '../assets/fruity.jpg'
 import {motion} from 'framer-motion'
 import { fadeIn, staggerContainer } from '../../utils/motion';
 
@@ -68,7 +68,7 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
       
       <img
         className="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
-        src={carrot}
+        src={carrot2}
         alt="carrot" />
     <div className="p-6 flex flex-col justify-center text-center items-center">
       <h5
@@ -91,16 +91,17 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
             >
       <img
         className="rounded-t-lg w-96 h-60 object-cover"
-        src={carrot2}
-        alt="carrot" />
+        src={fruity}
+        alt="fruity pebbles" />
     <div className="p-6 flex flex-col justify-center text-center items-center">
       <h5
         className="mb-2 text-xl leading-tight font-extrabold">
-        Card title
+        Fruity Pebbles
       </h5>
       <p className="mb-4 text-base">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
+      This colorful confection is made with moist vanilla cake, 
+      mixed with Fruity Pebbles cereal and smothered in a creamy 
+      white chocolate coating.
       </p>
       </div>
             </div>
@@ -120,11 +121,11 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
     <div className="p-6 flex flex-col justify-center text-center items-center">
       <h5
         className="mb-2 text-xl font-medium leading-tight">
-        Card title
+        Vanilla Dreamer
       </h5>
       <p className="mb-4 text-base">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
+      A dreamy and creamy vanilla cake pop, coated in a smooth chocolate 
+      shell with pastel sprinkles
       </p>
       </div>
             </div>

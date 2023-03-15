@@ -17,7 +17,7 @@ export const menuData = {
       {
         image: carrot,
         name: 'carrot cake',
-        price: '$9.49',
+        price: '$24/dozen',
         description: 'Class aptent taciti ciosqu litora torquent per',
       },
       {

@@ -96,14 +96,15 @@ const { title, subtitle, menuItems } = menuData;
           </div>
         </div>
 
-          <button className='bg-gradient-to-r from-purple-300 to-[#F40076] font-semibold text-white 
-          rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200 flex justify-center'>
+<div className='flex justify-center'>
+      <button className='bg-gradient-to-r from-purple-300 to-[#F40076] font-semibold text-white 
+          rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200 mt-6'>
             <span className='flex items-center'>
                 <h1>LET'S POP </h1>
                 <CiLollipop className='hover:rotate-180 duration-300 text-[22px]'/>
               </span> 
           </button>  
-
+</div>
       </motion.div>
     </section>
   )
