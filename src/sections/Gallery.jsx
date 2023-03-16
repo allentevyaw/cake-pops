@@ -3,6 +3,7 @@ import oreo from '../assets/oreo.jpg'
 import carrot2 from '../assets/carrot2.jpg'
 import sprinkle from '../assets/sprinkle.jpg'
 import fruity from '../assets/fruity.jpg'
+import toast from '../assets/toast.jpg'
 import {motion} from 'framer-motion'
 import { fadeIn, staggerContainer } from '../../utils/motion';
 
@@ -90,7 +91,7 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
               transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
             >
       <img
-        className="rounded-t-lg w-96 h-60 object-cover"
+        className="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
         src={fruity}
         alt="fruity pebbles" />
     <div className="p-6 flex flex-col justify-center text-center items-center">
@@ -115,7 +116,7 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
               transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
             >
       <img
-        className="rounded-t-lg w-96 h-60 object-cover"
+        className="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
         src={sprinkle}
         alt="sprinkle" />
     <div className="p-6 flex flex-col justify-center text-center items-center">
@@ -131,12 +132,27 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
             </div>
           </div>
 
+{/* Card #5 */}
           <div className="inline-block px-3">
-            <div
+          <div
               className="w-96 h-96 max-w-xs overflow-hidden rounded-xl shadow-md
-              bg-gradient-to-b from-[#F40076] to-purple-300
-               hover:shadow-xl transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
-            ></div>
+              bg-gradient-to-b from-[#F40076] to-purple-300 hover:shadow-xl 
+              transition-shadow duration-300 ease-in-out text-[#2B2B2B]"
+            >
+      <img
+        className="rounded-t-lg w-96 h-60 object-cover hover:scale-110 duration-300 ease-in-out"
+        src={toast}
+        alt="cinnamon toast crunch" />
+    <div className="p-6 flex flex-col justify-center text-center items-center">
+      <h5
+        className="mb-2 text-xl leading-tight font-extrabold">
+        Cinnamon Toast Crunch
+      </h5>
+      <p className="mb-4 text-base">
+      Vanilla cake, mixed with crunchy Cinnamon Toast Crunch cereal and coated in smooth white chocolate.
+      </p>
+      </div>
+            </div>
           {/* </div>
           <div class="inline-block px-3">
             <div
