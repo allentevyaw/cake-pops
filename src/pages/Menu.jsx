@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import { fadeIn, staggerContainer } from '../../utils/motion';
 import { menuData } from '../menuData';
 import {CiLollipop} from 'react-icons/ci'
+import { Link } from 'react-router-dom';
 
 
 
@@ -64,17 +65,17 @@ const { title, subtitle, menuItems } = menuData;
                 const { image, name, price, description } = item;
                 return (
                   <div key={index}>
-                    <div className='flex h-full'>
+                    <div className='flex h-full flex justify-center'>
                       {/* image */}
                       {/* reverse order for the first image and the last one */}
                       <div
                         className={`w-auto ${
-                          index === 1 || index === 3
+                          index === 1 || index === 3 || index === 5
                             ? 'order-1'
                             : 'order-none'
                         } `}
                       >
-                        <img src={image} alt={name} className='w-56 h-56 md:w-72 md:h-72 rounded-lg'/>
+                        <img src={image} alt={name} className='w-56 h-56 md:w-72 md:h-72 rounded-lg sm:hover:scale-110 duration-300 ease-in-out'/>
                       </div>
                       {/* text */}
                       <div className='bg-white flex flex-col justify-center md:p-6 w-[51%]'>
@@ -97,13 +98,15 @@ const { title, subtitle, menuItems } = menuData;
         </div>
 
 <div className='flex justify-center'>
+<Link to='/cake-pops/contact'>
       <button className='bg-gradient-to-r from-purple-300 to-[#F40076] font-semibold text-white 
           rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200 mt-6'>
             <span className='flex items-center'>
-                <h1>LET'S POP </h1>
+                <h1>CONTACT US! </h1>
                 <CiLollipop className='hover:rotate-180 duration-300 text-[22px]'/>
               </span> 
           </button>  
+  </Link>
 </div>
       </motion.div>
     </section>

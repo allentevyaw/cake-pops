@@ -99,7 +99,7 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
         Fruity Pebbles
       </h5>
       <p className="mb-4 text-base">
-      This colorful confection is made with moist vanilla cake, 
+      Colorful vanilla cake, 
       mixed with Fruity Pebbles cereal and smothered in a creamy 
       white chocolate coating.
       </p>
@@ -120,7 +120,7 @@ className="flex flex-col bg-[#FFFBF7] m-auto p-auto">
         alt="sprinkle" />
     <div className="p-6 flex flex-col justify-center text-center items-center">
       <h5
-        className="mb-2 text-xl font-medium leading-tight">
+        className="mb-2 text-xl leading-tight font-extrabold">
         Vanilla Dreamer
       </h5>
       <p className="mb-4 text-base">

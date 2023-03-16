@@ -23,13 +23,17 @@ const Social = () => {
           variants={fadeIn('right', 'tween', 0.2, 0.5)}
           className="hover:text-[#F40076] cursor-pointer pr-16"
         >
+          <a href='https://www.instagram.com/cakepopsbyandrea/'>
             <AiOutlineInstagram className='hover:scale-110 duration-200'/>
+          </a>
   </motion.div>
   <motion.div
           variants={fadeIn('right', 'tween', 0.3, 1)}
           className="hover:text-[#F40076] cursor-pointer"
         >
+          <a href='mailto:cakepopsbyandrea@yahoo.com'>
             <HiOutlineMail className='hover:scale-110 duration-200'/>
+          </a>
   </motion.div>
   <motion.div
           variants={fadeIn('right', 'tween', 0.4, 1.5)}

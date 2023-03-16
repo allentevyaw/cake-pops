@@ -4,6 +4,7 @@ import { slideIn, staggerContainer, textVariant } from '../../utils/motion';
 import styles from '../styles';
 import cake from '../assets/logo.png'
 import {CiLollipop} from 'react-icons/ci'
+import { Link } from 'react-router-dom';
 
 
 
@@ -60,13 +61,15 @@ const Hero = () => {
         </motion.div>
       </motion.div>
       <div className='w-full flex justify-center'>
-        <button className='bg-gradient-to-r from-purple-300 to-[#F40076] font-semibold text-white 
-          rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200 flex justify-center'>
-            <span className='flex items-center'>
-                <h1>LET'S POP </h1>
-                <CiLollipop className='hover:rotate-180 duration-300 text-[22px]'/>
-              </span> 
-          </button> 
+      <Link to='/cake-pops/menu'>
+          <button className='bg-gradient-to-r from-purple-300 to-[#F40076] font-semibold text-white 
+            rounded-lg mb-10 p-3 shadow-lg hover:scale-[110%] duration-200 flex justify-center'>
+              <span className='flex items-center'>
+                  <h1>LET'S POP </h1>
+                  <CiLollipop className='hover:rotate-180 duration-300 text-[22px]'/>
+                </span> 
+            </button> 
+        </Link>
       </div>
     </section>
   )

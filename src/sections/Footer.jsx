@@ -15,13 +15,13 @@ const Footer = () => {
         <span>Get connected with us on our socials:</span>
         </div>
         <div className="flex justify-center text-2xl">
-        <a href="#!" className="mr-6 :text-neutral-200 hover:text-[#F40076] hover:scale-125 duration-200">
+        <a href="https://www.instagram.com/cakepopsbyandrea/" className="mr-6 :text-neutral-200 hover:text-[#F40076] hover:scale-125 duration-200">
             <AiOutlineInstagram />
         </a>
         <a href="#!" className="mr-6 text-neutral-200 hover:text-[#F40076] hover:scale-125 duration-200">
             <FaTiktok />
         </a>
-        <a href="#!" className="mr-6 text-neutral-200 hover:text-[#F40076] hover:scale-125 duration-200">
+        <a href="mailto:cakepopsbyandrea@yahoo.com" className="mr-6 text-neutral-200 hover:text-[#F40076] hover:scale-125 duration-200">
             <HiOutlineMail />
         </a>
         </div>
