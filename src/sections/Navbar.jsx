@@ -59,9 +59,6 @@ transition ease transform duration-300 bg-white`;
                     <Link to='/cake-pops/menu'>
                       <li className='link-underline'>Menu</li>
                     </Link>
-                    <Link>
-                      <li className='link-underline'>About</li>
-                    </Link>
                     <Link to='/cake-pops/contact'>
                       <li className='link-underline'>Contact</li>
                     </Link>
@@ -106,11 +103,10 @@ transition ease transform duration-300 bg-white`;
 
             <ul className='py-8 flex-col text-2xl text-[#FFFBF7] uppercase mx-[-10px]'>
               <Link to='/cake-pops/menu'>
-                <li className='py-6 hover:text-[#2B2B2B] duration-100'>Menu</li>
+                <li className='py-6 hover:text-[#2B2B2B] duration-300'>Menu</li>
               </Link>
-                <li className='py-6 hover:text-[#2B2B2B]'>About</li>
                 <Link to='/cake-pops/contact'>
-                  <li className='py-6 hover:text-[#2B2B2B]'>Contact</li>
+                  <li className='py-6 hover:text-[#2B2B2B] duration-300'>Contact</li>
                 </Link>
             </ul>
             </div>

@@ -75,7 +75,7 @@ const { title, subtitle, menuItems } = menuData;
                             : 'order-none'
                         } `}
                       >
-                        <img src={image} alt={name} className='w-56 h-56 md:w-72 md:h-72 rounded-lg sm:hover:scale-110 duration-300 ease-in-out'/>
+                        <img src={image} alt={name} className='w-56 h-56 md:w-72 md:h-72 rounded-lg sm:hover:scale-110 duration-300 ease-in-out object-cover'/>
                       </div>
                       {/* text */}
                       <div className='bg-white flex flex-col justify-center md:p-6 w-[51%]'>
