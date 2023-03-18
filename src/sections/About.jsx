@@ -30,7 +30,7 @@ const About = () => {
         </div>
       </motion.div>
       <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
+        variants={slideIn('left', 'tween', 0.2, .5)}
         className="flex justify-center flex-col text-center"
       >
         <h1 className='text-[36px] font-bold pb-4'>WELCOME!</h1>
